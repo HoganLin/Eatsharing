@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="138pt"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/nav_group"/>
+
+    <RadioGroup
+        android:id="@+id/nav_group"
+        android:layout_width="138pt"
+        android:layout_height="21pt"
+        android:background="#eeeeee"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            style="@style/Custom.TabRadioButton"
+            android:drawableTop="@drawable/selector_tab_1"
+            android:textColor="@drawable/selector_tab_textcolor"
+            android:text="首页"/>
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            style="@style/Custom.TabRadioButton"
+            android:drawableTop="@drawable/selector_tab_2"
+            android:textColor="@drawable/selector_tab_textcolor"
+            android:text="收藏"/>
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            style="@style/Custom.TabRadioButton"
+            android:drawableTop="@drawable/selector_tab_3"
+            android:textColor="@drawable/selector_tab_textcolor"
+            android:text="我的"/>
+
+    </RadioGroup>
+
+</RelativeLayout>

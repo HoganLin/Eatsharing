@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20pt"
+        android:layout_marginTop="1pt">
+
+        <TextView
+            android:id="@+id/ingre_text"
+            android:layout_marginStart="5pt"
+            android:layout_width="60pt"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="用料"/>
+
+        <TextView
+            android:layout_marginStart="2pt"
+            android:layout_width="wrap_content"
+            android:textSize="20sp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text=":"/>
+
+        <TextView
+            android:id="@+id/amount_text"
+            android:layout_marginStart="8pt"
+            android:layout_width="60pt"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="用量"/>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginTop="1pt"
+        android:layout_marginBottom="1pt"
+        android:layout_height="0.3pt"
+        android:background="#dddddd" />
+
+</LinearLayout>

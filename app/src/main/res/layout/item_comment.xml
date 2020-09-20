@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="23pt">
+
+    <ImageView
+        android:id="@+id/comment_icon"
+        android:src="@drawable/head_holder"
+        android:layout_marginStart="4pt"
+        android:layout_centerVertical="true"
+        android:layout_width="12pt"
+        android:layout_height="12pt"/>
+
+    <TextView
+        android:id="@+id/comment_user"
+        android:text="用户名"
+        android:layout_marginTop="1pt"
+        android:layout_marginStart="25pt"
+        android:layout_width="100pt"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/comment_content"
+        android:text="评论内容"
+        android:layout_width="105pt"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6pt"
+        android:layout_marginStart="25pt"/>
+
+</RelativeLayout>

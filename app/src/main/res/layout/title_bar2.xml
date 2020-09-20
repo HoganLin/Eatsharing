@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <View
+        android:id="@+id/status_bar_fix"
+        android:fitsSystemWindows="true"
+        android:layout_width="138pt"
+        android:layout_height="0dp"
+        android:background="#eeeeee" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="138pt"
+        android:layout_height="18pt"
+        android:background="#eeeeee">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="10pt"
+            android:layout_height="10pt"
+            android:scaleType="fitCenter"
+            android:background="#00000000"
+            android:src="@drawable/back"/>
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_gravity="center"
+            android:textColor="#000"
+            android:textSize="7pt"
+            android:text="标题"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+</merge>

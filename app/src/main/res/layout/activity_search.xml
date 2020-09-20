@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.SearchActivity">
+
+    <View
+        android:id="@+id/status_bar_fix"
+        android:fitsSystemWindows="true"
+        android:layout_width="138pt"
+        android:layout_height="0dp"
+        android:background="#eeeeee" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="138pt"
+        android:layout_height="18pt"
+        android:background="#eeeeee">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="10pt"
+            android:layout_height="10pt"
+            android:scaleType="fitCenter"
+            android:background="#00000000"
+            android:src="@drawable/back"/>
+
+        <RelativeLayout
+            android:layout_width="98pt"
+            android:layout_height="12pt"
+            android:background="@drawable/button_search_shape"
+            android:layout_gravity="center">
+
+            <EditText
+                android:id="@+id/search_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5pt"
+                android:background="@null"
+                android:hint="点击搜索食谱"
+                android:textColor="#000"
+                android:textSize="6pt" />
+
+            <ImageButton
+                android:id="@+id/search_btn"
+                android:layout_width="10pt"
+                android:layout_height="10pt"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="1pt"
+                android:scaleType="centerCrop"
+                android:background="#00000000"
+                android:src="@drawable/search"/>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/null_text"
+        android:text="没有找到"
+        android:textSize="15pt"
+        android:layout_marginTop="15pt"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"/>
+
+</LinearLayout>

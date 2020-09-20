@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginTop="8pt"
+        android:layout_width="138pt"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/author_img"
+            android:layout_width="11pt"
+            android:layout_height="11pt"
+            android:layout_marginStart="4pt"
+            android:src="@drawable/image_holder" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="80pt"
+            android:layout_height="11pt"
+            android:textSize="17sp"
+            android:gravity="center_vertical"
+            android:layout_marginStart="5pt"
+            android:text="标题"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_marginTop="3pt"
+        android:id="@+id/food_image"
+        android:layout_width="match_parent"
+        android:layout_marginStart="2pt"
+        android:layout_marginEnd="2pt"
+        android:layout_height="75pt"
+        android:src="@drawable/image_holder"/>
+
+    <TextView
+        android:id="@+id/food_title"
+        android:layout_marginTop="2pt"
+        android:layout_width="124pt"
+        android:textSize="21sp"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5pt"/>
+
+    <TextView
+        android:layout_marginTop="2pt"
+        android:id="@+id/msg_text"
+        android:layout_marginStart="5pt"
+        android:layout_width="124pt"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3pt"
+        android:background="#dddddd"
+        android:layout_marginTop="7pt" />
+
+</LinearLayout>

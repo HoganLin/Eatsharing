@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.RecipeActivity">
+
+    <include
+        layout="@layout/title_bar2"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/cover_image"
+                android:layout_width="match_parent"
+                android:layout_height="93pt"
+                android:scaleType="centerCrop"
+                android:src="@drawable/cover_holder" />
+
+            <EditText
+                android:id="@+id/title_edit"
+                android:layout_marginTop="5pt"
+                android:layout_width="120pt"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="9pt"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="输入标题"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3pt"
+                android:background="#dddddd"
+                android:layout_marginTop="7pt" />
+
+            <RelativeLayout
+                android:layout_marginTop="4pt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5pt"
+                    android:textSize="7pt"
+                    android:textColor="#444444"
+                    android:text="材料"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="7pt"
+                    android:textColor="#444444"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="5pt"
+                    android:text="用量"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ingre_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/ingre1"
+                    layout="@layout/item_ingre"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/add_ingre"
+                android:layout_width="wrap_content"
+                android:layout_gravity="end"
+                android:layout_height="15pt"
+                android:padding="0pt"
+                android:text="添加一行"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3pt"
+                android:background="#dddddd"
+                android:layout_marginTop="7pt" />
+
+            <LinearLayout
+                android:id="@+id/step_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include
+                    android:id="@+id/step1"
+                    layout="@layout/item_step"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/add_step"
+                android:layout_width="wrap_content"
+                android:layout_gravity="end"
+                android:layout_height="15pt"
+                android:padding="0pt"
+                android:text="添加一步"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.3pt"
+                android:background="#dddddd"
+                android:layout_marginTop="7pt" />
+
+            <TextView
+                android:layout_marginTop="4pt"
+                android:layout_marginStart="4pt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#333333"
+                android:textSize="7pt"
+                android:text="小贴士"/>
+
+            <EditText
+                android:id="@+id/tip_edit"
+                android:layout_marginTop="4pt"
+                android:layout_width="134pt"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="这里添加贴士"/>
+
+            <TextView
+                android:layout_marginTop="4pt"
+                android:layout_marginStart="4pt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#333333"
+                android:textSize="7pt"
+                android:text="类别"/>
+
+            <EditText
+                android:id="@+id/sort_edit"
+                android:layout_marginTop="4pt"
+                android:layout_width="134pt"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="这里添加类别"/>
+
+            <Button
+                android:id="@+id/release_btn"
+                android:layout_width="120pt"
+                android:layout_marginTop="8pt"
+                android:layout_marginBottom="8pt"
+                android:background="@drawable/button_circle_shape"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="20pt"
+                android:text="发布食谱"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

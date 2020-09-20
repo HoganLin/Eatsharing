@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".activity.FoodActivity">
+
+    <include
+        layout="@layout/title_bar2"/>
+
+    <ImageView
+        android:id="@+id/food_image"
+        android:layout_width="match_parent"
+        android:layout_height="105pt"
+        android:src="@drawable/step_holder"/>
+
+    <EditText
+        android:layout_marginTop="3pt"
+        android:id="@+id/title_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="点击添加标题"/>
+
+    <EditText
+        android:layout_marginTop="3pt"
+        android:id="@+id/content_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="点击添加说明"/>
+
+    <EditText
+        android:layout_marginTop="3pt"
+        android:id="@+id/tag_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="点击添加标签"/>
+
+    <Button
+        android:layout_marginTop="10pt"
+        android:id="@+id/release_btn"
+        android:layout_width="25pt"
+        android:layout_height="15pt"
+        android:background="@drawable/button_circle_shape"
+        android:layout_gravity="center_horizontal"
+        android:text="发布"/>
+
+</LinearLayout>

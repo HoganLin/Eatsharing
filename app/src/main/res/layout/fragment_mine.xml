@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.MineFragment">
+
+    <LinearLayout
+        android:id="@+id/user_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/title_bar"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12pt">
+
+            <ImageView
+                android:id="@+id/head_image"
+                android:layout_width="45pt"
+                android:layout_height="45pt"
+                android:layout_marginStart="9pt"
+                android:src="@drawable/head_holder" />
+
+            <TextView
+                android:id="@+id/user_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10pt"
+                android:text="用户名"
+                android:textSize="10pt" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/intro_text"
+            android:layout_marginTop="12pt"
+            android:layout_marginStart="10pt"
+            android:layout_width="128pt"
+            android:layout_height="wrap_content"
+            android:text="这个人暂时没有简介"/>
+
+        <LinearLayout
+            android:layout_marginTop="7pt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/focus_num"
+                android:layout_marginStart="10pt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="8pt"
+                android:text="0"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="6pt"
+                android:text="关注"/>
+
+            <Button
+                android:id="@+id/edit_btn"
+                android:layout_width="30pt"
+                android:layout_height="15pt"
+                android:layout_marginStart="69pt"
+                android:background="@drawable/button_circle_shape"
+                android:text="编辑资料"
+                android:textSize="5pt" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3pt"
+            android:background="#dddddd"
+            android:layout_marginTop="15pt" />
+
+        <LinearLayout
+            android:id="@+id/recipe_mine"
+            android:layout_width="138pt"
+            android:layout_height="20pt">
+
+            <ImageView
+                android:layout_width="12pt"
+                android:layout_height="12pt"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="3pt"
+                android:src="@drawable/myrecipe"/>
+
+            <TextView
+                android:layout_width="138pt"
+                android:layout_height="20pt"
+                android:textSize="6pt"
+                android:layout_marginStart="5pt"
+                android:text="我的食谱"
+                android:gravity="center_vertical"/>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3pt"
+            android:background="#dddddd"/>
+
+        <LinearLayout
+            android:id="@+id/food_mine"
+            android:layout_width="138pt"
+            android:layout_height="20pt">
+
+            <ImageView
+                android:layout_width="11pt"
+                android:layout_height="11pt"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="3.5pt"
+                android:src="@drawable/myfood"/>
+
+            <TextView
+                android:layout_width="138pt"
+                android:layout_height="20pt"
+                android:textSize="6pt"
+                android:layout_marginStart="5pt"
+                android:text="我的美食动态"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3pt"
+            android:background="#dddddd"/>
+
+        <LinearLayout
+            android:id="@+id/login_out"
+            android:layout_width="138pt"
+            android:layout_height="20pt">
+
+            <ImageView
+                android:layout_width="11pt"
+                android:layout_height="11pt"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="3.8pt"
+                android:src="@drawable/quit"/>
+
+            <TextView
+                android:layout_width="138pt"
+                android:layout_height="20pt"
+                android:textSize="6pt"
+                android:layout_marginStart="5pt"
+                android:text="退出登录"
+                android:gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3pt"
+            android:background="#dddddd"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/login_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="120pt"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户名："
+                android:textSize="8pt" />
+
+            <EditText
+                android:id="@+id/user_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="120pt"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="密   码："
+                android:textSize="8pt" />
+
+            <EditText
+                android:id="@+id/psd_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5pt">
+
+            <Button
+                android:id="@+id/login_button"
+                android:layout_width="120pt"
+                android:layout_height="18pt"
+                android:background="@drawable/button_circle_shape"
+                android:textColor="#666666"
+                android:text="登录"
+                android:textSize="8pt" />
+
+            <Button
+                android:layout_marginTop="2pt"
+                android:id="@+id/sign_button"
+                android:layout_width="120pt"
+                android:layout_height="18pt"
+                android:background="@drawable/button_circle_shape"
+                android:textColor="#666666"
+                android:text="注册"
+                android:textSize="8pt" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/sign_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="#00000000"
+            android:text="注册"
+            android:textColor="#999999"
+            android:textSize="6pt" />
+
+    </LinearLayout>
+
+</RelativeLayout>

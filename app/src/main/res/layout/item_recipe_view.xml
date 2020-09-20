@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginStart="2pt"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/recipe_cover"
+        android:layout_width="65pt"
+        android:layout_height="58pt"
+        android:src="@drawable/image_holder"/>
+
+    <LinearLayout
+        android:layout_marginBottom="1pt"
+        android:id="@+id/user_layout"
+        android:layout_width="65pt"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/author_img"
+            android:layout_width="10pt"
+            android:layout_height="10pt"
+            android:layout_marginStart="1pt"
+            android:src="@drawable/image_holder" />
+
+        <TextView
+            android:layout_marginStart="2pt"
+            android:id="@+id/recipe_title"
+            android:layout_width="40pt"
+            android:layout_height="10pt"
+            android:gravity="center_vertical"
+            android:text="标题"/>
+
+    </LinearLayout>
+
+</LinearLayout>

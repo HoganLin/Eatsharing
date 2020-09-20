@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.ShowRecipeActivity">
+
+    <include
+        android:id="@+id/title_bar1"
+        layout="@layout/title_bar2"
+        android:layout_width="138pt"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/cover_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="103pt"
+                    android:src="@drawable/image_holder"/>
+
+                <TextView
+                    android:id="@+id/title_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2pt"
+                    android:textSize="25sp"
+                    android:text="标题"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_marginTop="5pt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2pt"
+                    android:textSize="20sp"
+                    android:text="用料"/>
+
+                <LinearLayout
+                    android:layout_marginTop="5pt"
+                    android:id="@+id/ingre_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.3pt"
+                        android:background="#dddddd" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="5pt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2pt"
+                    android:textSize="20sp"
+                    android:text="步骤"/>
+
+                <LinearLayout
+                    android:layout_marginTop="5pt"
+                    android:id="@+id/step_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"/>
+
+                <TextView
+                    android:id="@+id/tips_text"
+                    android:layout_marginTop="5pt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2pt"
+                    android:textSize="17sp"
+                    android:text="小贴士"/>
+
+                <TextView
+                    android:id="@+id/tip_text"
+                    android:layout_marginTop="5pt"
+                    android:layout_width="120pt"
+                    android:textSize="17sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2pt"
+                    android:text="贴士"/>
+
+                <TextView
+                    android:layout_marginTop="5pt"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="2pt"
+                    android:layout_height="wrap_content"
+                    android:textSize="19sp"
+                    android:text="评论"/>
+
+                <LinearLayout
+                    android:id="@+id/comment_layout"
+                    android:layout_marginTop="3pt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/user_meg"
+                    android:layout_marginTop="8pt"
+                    android:layout_width="match_parent"
+                    android:layout_height="25pt">
+
+                    <ImageView
+                        android:layout_marginTop="1pt"
+                        android:layout_marginStart="3pt"
+                        android:id="@+id/hphoto"
+                        android:layout_width="21pt"
+                        android:layout_height="21pt"/>
+
+                    <TextView
+                        android:id="@+id/user_name"
+                        android:layout_width="70pt"
+                        android:layout_height="25pt"
+                        android:gravity="center_vertical"
+                        android:layout_marginStart="32pt"
+                        android:textSize="25sp"/>
+
+                    <Button
+                        android:id="@+id/focus_btn"
+                        android:text="关注"
+                        android:layout_width="25pt"
+                        android:layout_height="13pt"
+                        android:layout_marginTop="6pt"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="3pt"
+                        android:background="@drawable/button_circle_shape"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="25pt"/>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/common_layout"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:background="#eeeeee"
+            android:layout_gravity="bottom"
+            android:layout_height="20pt">
+
+            <ImageView
+                android:id="@+id/my_hphoto"
+                android:layout_marginTop="4pt"
+                android:layout_marginStart="4pt"
+                android:layout_width="12pt"
+                android:layout_height="12pt"/>
+
+            <RelativeLayout
+                android:gravity="center_vertical"
+                android:background="@drawable/button_search_shape"
+                android:layout_marginTop="4pt"
+                android:layout_marginStart="20pt"
+                android:layout_width="99pt"
+                android:layout_height="12pt">
+
+                <EditText
+                    android:id="@+id/comment_edit"
+                    android:hint="发表评论"
+                    android:layout_marginStart="3pt"
+                    android:background="@null"
+                    android:textColor="#000"
+                    android:layout_width="80pt"
+                    android:layout_height="11pt"
+                    android:layout_centerVertical="true"/>
+
+                <ImageButton
+                    android:id="@+id/send_msg"
+                    android:src="@drawable/send"
+                    android:background="#00000000"
+                    android:scaleType="fitCenter"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="83pt"
+                    android:layout_width="10pt"
+                    android:layout_height="10pt"/>
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/collect_btn"
+                android:layout_width="11pt"
+                android:layout_height="11pt"
+                android:src="@drawable/collect"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="4pt"
+                android:layout_alignParentEnd="true"/>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

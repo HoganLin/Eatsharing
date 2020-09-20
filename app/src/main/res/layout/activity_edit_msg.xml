@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.EditMsgActivity">
+
+    <include
+        layout="@layout/title_bar2"/>
+
+    <RelativeLayout
+        android:layout_marginTop="20pt"
+        android:layout_width="100pt"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginStart="5pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="性别："
+            android:textSize="8pt" />
+
+        <EditText
+            android:layout_marginStart="35pt"
+            android:hint="输入性别"
+            android:id="@+id/sex_edit"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_marginTop="5pt"
+        android:layout_marginBottom="5pt"
+        android:layout_width="match_parent"
+        android:layout_height="0.3pt"
+        android:background="#dddddd"/>
+
+    <RelativeLayout
+        android:layout_width="100pt"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginStart="5pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="生日："
+            android:textSize="8pt" />
+
+        <TextView
+            android:text="选择日期"
+            android:layout_marginStart="35pt"
+            android:id="@+id/birtext"
+            android:textColor="#999999"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_marginTop="5pt"
+        android:layout_marginBottom="5pt"
+        android:layout_width="match_parent"
+        android:layout_height="0.3pt"
+        android:background="#dddddd"/>
+
+    <RelativeLayout
+        android:layout_width="100pt"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginStart="5pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="职业："
+            android:textSize="8pt" />
+
+        <EditText
+            android:id="@+id/pro_edit"
+            android:hint="输入职业"
+            android:layout_marginStart="35pt"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <View
+        android:layout_marginTop="5pt"
+        android:layout_marginBottom="5pt"
+        android:layout_width="match_parent"
+        android:layout_height="0.3pt"
+        android:background="#dddddd"/>
+
+    <RelativeLayout
+        android:layout_width="100pt"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginStart="5pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="城市："
+            android:textSize="8pt" />
+
+        <EditText
+            android:id="@+id/city_edit"
+            android:hint="输入城市"
+            android:layout_marginStart="35pt"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <View
+        android:layout_marginTop="5pt"
+        android:layout_marginBottom="5pt"
+        android:layout_width="match_parent"
+        android:layout_height="0.3pt"
+        android:background="#dddddd"/>
+
+    <RelativeLayout
+        android:layout_width="100pt"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginStart="5pt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="简介："
+            android:textSize="8pt" />
+
+        <EditText
+            android:hint="输入简介"
+            android:layout_marginStart="35pt"
+            android:background="@null"
+            android:id="@+id/intro_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_marginTop="30pt"
+        android:id="@+id/save_msg_btn"
+        android:layout_width="40pt"
+        android:layout_height="20pt"
+        android:layout_gravity="center_horizontal"
+        android:text="保存"
+        android:background="@drawable/button_circle_shape"/>
+
+</LinearLayout>

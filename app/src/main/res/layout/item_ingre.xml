@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="138pt"
+        android:layout_height="20pt"
+        android:layout_marginTop="5pt">
+
+        <View
+            android:layout_width="60pt"
+            android:layout_height="20pt"
+            android:background="#eeeeee"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="2pt"/>
+
+
+        <EditText
+            android:id="@+id/ingre_edit"
+            android:layout_width="57pt"
+            android:layout_height="20pt"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:layout_marginStart="5pt"
+            android:hint="材料"/>
+
+        <View
+            android:layout_width="60pt"
+            android:layout_height="20pt"
+            android:background="#eeeeee"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="76pt"/>
+
+
+        <EditText
+            android:id="@+id/amount_edit"
+            android:layout_width="57pt"
+            android:layout_height="20pt"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:layout_marginStart="78pt"
+            android:hint="用量"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

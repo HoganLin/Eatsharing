@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <View
+        android:id="@+id/status_bar_fix"
+        android:fitsSystemWindows="true"
+        android:layout_width="138pt"
+        android:layout_height="0dp"
+        android:background="#eeeeee" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="138pt"
+        android:layout_height="18pt"
+        android:background="#eeeeee">
+
+        <ImageButton
+            android:id="@+id/add_button"
+            android:layout_width="10pt"
+            android:layout_height="10pt"
+            android:scaleType="fitCenter"
+            android:background="#00000000"
+            android:src="@drawable/add"/>
+
+        <RelativeLayout
+            android:layout_width="98pt"
+            android:layout_height="12pt"
+            android:background="@drawable/button_search_shape"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/toolbar_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:hint="点击搜索食谱"
+                android:textColor="#ffffff"
+                android:textSize="6pt" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+</merge>
